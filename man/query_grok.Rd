@@ -17,11 +17,14 @@ query_grok(
 
 \item{api_key}{A character string with your xAI API key.}
 
-\item{endpoint}{A character string specifying the API endpoint URL. Defaults to "https://api.x.ai/v1/chat/completions".}
+\item{endpoint}{A character string specifying the API endpoint URL. Defaults
+to "https://api.x.ai/v1/chat/completions".}
 
-\item{model}{A character string specifying the Grok model to use. Defaults to "grok-2-1212".}
+\item{model}{A character string specifying the Grok model to use. Defaults to
+"grok-2-1212".}
 
-\item{debug_flag}{A logical value indicating whether to print debug information (status code and raw response). Defaults to FALSE.}
+\item{debug_flag}{A logical value indicating whether to print debug
+information (status code and raw response). Defaults to FALSE.}
 }
 \value{
 A character string containing Grok's answer.
@@ -31,9 +34,9 @@ Sends a question to the Grok AI API by xAI and returns the response.
 }
 \examples{
 \dontrun{
-  api_key <- "your_api_key_here"
-  answer <- query_grok("What is the meaning of life?", api_key)
-  print(answer)
+api_key <- "your_api_key_here"
+answer <- query_grok("What is the meaning of life?", api_key)
+print(answer)
 }
 
 }

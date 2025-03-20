@@ -4,23 +4,30 @@
 #'
 #' @param question A character string containing the question to ask Grok.
 #' @param api_key A character string with your xAI API key.
-#' @param endpoint A character string specifying the API endpoint URL. Defaults to "https://api.x.ai/v1/chat/completions".
-#' @param model A character string specifying the Grok model to use. Defaults to "grok-2-1212".
-#' @param debug_flag A logical value indicating whether to print debug information (status code and raw response). Defaults to FALSE.
+#' @param endpoint A character string specifying the API endpoint URL. Defaults
+#' to "https://api.x.ai/v1/chat/completions".
+#' @param model A character string specifying the Grok model to use. Defaults to
+#'  "grok-2-1212".
+#' @param debug_flag A logical value indicating whether to print debug
+#'  information (status code and raw response). Defaults to FALSE.
 #'
 #' @return A character string containing Grok's answer.
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#'   api_key <- "your_api_key_here"
-#'   answer <- query_grok("What is the meaning of life?", api_key)
-#'   print(answer)
+#' api_key <- "your_api_key_here"
+#' answer <- query_grok("What is the meaning of life?", api_key)
+#' print(answer)
 #' }
 #'
 #' @importFrom httr POST add_headers content
 #' @importFrom jsonlite toJSON fromJSON
-query_grok <- function(question, api_key, endpoint = "https://api.x.ai/v1/chat/completions", model = "grok-2-1212", debug_flag = FALSE) {
+query_grok <- function(question,
+                       api_key,
+                       endpoint = "https://api.x.ai/v1/chat/completions",
+                       model = "grok-2-1212",
+                       debug_flag = FALSE) {
   # Prepare the request body
   body <- list(
     messages = list(
