@@ -1,0 +1,18 @@
+Package: grokR
+Title: Interface to Grok AI by xAI
+Version: 0.1.0
+Authors@R: person("Your", "Name", email = "your.email@example.com", role = c("aut", "cre"))
+Description: Provides a simple interface to send questions to and receive answers from the Grok AI developed by xAI, using their API.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: 
+    R (>= 4.0.0)
+Imports: 
+    httr (>= 1.4.7),
+    jsonlite (>= 1.8.8)
+Suggests: 
+    testthat (>= 3.0.0),
+    pkgdown (>= 2.0.0),
+    lintr (>= 3.1.0),
+    styler (>= 1.10.0)
+RoxygenNote: 7.3.2
