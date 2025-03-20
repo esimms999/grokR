@@ -10,3 +10,10 @@ An R package to interface with the Grok AI API by xAI.
 
 # Or from GitHub
 devtools::install_github("esimms999/grokR")
+
+## Setup with renv
+To ensure you’re using the same package versions as the developer:
+
+```R
+library(renv)
+renv::restore()
