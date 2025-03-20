@@ -1,0 +1,18 @@
+---
+title: "Getting Started with grokR"
+author: "Eric Simms"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with grokR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introduction
+The `grokR` package lets you query the Grok AI API by xAI directly from R.
+
+## Installation
+
+    devtools::install_github("esimms999/grokR")
+    library(grokR)

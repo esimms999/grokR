@@ -17,6 +17,9 @@ Suggests:
     testthat (>= 3.0.0),
     pkgdown (>= 2.0.0),
     lintr (>= 3.1.0),
-    styler (>= 1.10.0)
+    styler (>= 1.10.0),
+    knitr,
+    rmarkdown
 RoxygenNote: 7.3.2
 URL: https://esimms999.github.io/grokR/
+VignetteBuilder: knitr

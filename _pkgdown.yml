@@ -1,11 +1,60 @@
+# Site metadata
 url: https://esimms999.github.io/grokR/
-template:
-  params:
-    bootswatch: flatly
-navbar:
-  left:
-  - text: Home
-    href: index.html
-  - text: Reference
-    href: reference/index.html
+title: grokR
+description: An R package to query the Grok AI API by xAI.
 
+# Template configuration with Bootstrap 5
+template:
+  bootstrap: 5
+  bslib:
+    bootswatch: "flatly"
+
+# Navigation bar
+navbar:
+  structure:
+    left: [home, reference, articles]
+    right: [github]
+  components:
+    home:
+      text: "Home"
+      href: index.html
+    reference:
+      text: "Reference"
+      href: reference/index.html
+    articles:
+      text: "Articles"
+      href: articles/index.html
+    github:
+      icon: fa-github
+      href: https://github.com/esimms999/grokR
+      aria-label: "Visit GitHub repository"  # Fixed accessibility
+
+# Reference section
+reference:
+  - title: "Core Function"
+    desc: "Function to query the Grok AI API."
+    contents:
+      - query_grok
+
+# Development mode
+development:
+  mode: auto
+
+# Footer
+footer:
+  structure:
+    left: authors
+    right: powered
+  components:
+    authors:
+      text: "Built by Your Name and Grok (xAI)"
+    powered:
+      text: "Powered by pkgdown"
+
+# Home
+home:
+  sidebar:
+    structure: [authors, links]
+  links:
+    - text: "View on GitHub"
+      href: https://github.com/esimms999/grokR
