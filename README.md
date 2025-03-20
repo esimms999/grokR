@@ -1,6 +1,9 @@
 # grokR
 
-An R package to interface with the Grok AI API by xAI.
+An R package to interface with the Grok AI API by xAI.  
+
+Visit the [grokR website](https://esimms999.github.io/grokR/) for documentation.  
+
 
 ## For users:
 

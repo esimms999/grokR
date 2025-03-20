@@ -1,7 +1,10 @@
 Package: grokR
 Title: Interface to Grok AI by xAI
-Version: 0.1.0
-Authors@R: person("Eric", "Simms", email = "esimms@yahoo.com", role = c("aut", "cre"))
+Version: 0.1.1
+Authors@R: c(
+  person("Eric", "Simms", email = "esimms@yahoo.com", role = c("aut", "cre")),
+  person("Grok", role = "aut", comment = "AI assistant created by xAI")
+  )
 Description: Provides a simple interface to send questions to and receive answers from the Grok AI developed by xAI, using their API.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -16,3 +19,4 @@ Suggests:
     lintr (>= 3.1.0),
     styler (>= 1.10.0)
 RoxygenNote: 7.3.2
+URL: https://esimms999.github.io/grokR/

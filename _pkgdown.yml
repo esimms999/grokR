@@ -1,0 +1,11 @@
+url: https://esimms999.github.io/grokR/
+template:
+  params:
+    bootswatch: flatly
+navbar:
+  left:
+  - text: Home
+    href: index.html
+  - text: Reference
+    href: reference/index.html
+
