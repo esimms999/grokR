@@ -3,3 +3,5 @@
 ^docs$
 ^renv/activate.R$
 ^renv/library/
+^renv
+^renv.lock
