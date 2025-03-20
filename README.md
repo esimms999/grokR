@@ -2,19 +2,21 @@
 
 An R package to interface with the Grok AI API by xAI.
 
-## Installation
+## For users:
 
-```R
-# Install from CRAN (once submitted)
-# install.packages("grokR")
+    # Install from GitHub  
 
-# Or from GitHub
-install.packages("devtools")
-devtools::install_github("esimms999/grokR")
+    install.packages("devtools")  
+    devtools::install_github("esimms999/grokR")  
+    library(grokR)  
+    
+    api_key <- "your API key here"  
+    query_grok("What is the capital city of England?", api_key)  
 
-## Setup with renv
-To ensure you’re using the same package versions as the developer:
+  
+## For developers:
 
-```R
-library(renv)
-renv::restore()
+    # Setup with renv to ensure you’re using the same package versions as the developer:  
+
+    library(renv)  
+    renv::restore()  
